@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamal Website</title>
+
+    <link rel="stylesheet" type="text/css" href="../static/styles.css">
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo">JA<span>MAL</span></a>
+
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#tours">Tours</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+
+        <div class="h-right">
+            <a href="#">Follow Us</a>
+            <a href="https://www.instagram.com/jamal_sight_morocco_?igsh=cWplaW55MWJxYTRt&utm_source=qr"><i class="ri-instagram-fill"></i></a>
+            <a href="https://www.facebook.com/jamal.jamaljamal.71697092?mibextid=LQQJ4d"><i class="ri-facebook-fill"></i></a>
+            <li><a href="tel:+212668666473"><i class="ri-phone-fill"></i></a></li>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+
+
+    <section class="home">
+        <div class="home-text">
+            <h5>Explore</h5>
+            <h1>Ourika Valley</h1>
+            <p>Discover and Book Unique Experiences in Ourika Vallet. <br> Find your activity that supplies your dream walk hosted by Jamal. <br>You are accompanied by really good English speaking tour guides.</p>
+
+            <a href="#" class="btn" id="bookTripBtn">Book A Trip</a>
+        </div>
+
+
+        <div id="formContainer" class="form-container">
+            <form action="{{ url_for('book_trip') }}" method="post" class="form">
+                <div class="form-row">
+                    <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+    
+                <div class="form-row date-row">
+                    <div class="form-group">
+                        <label for="startDate">Start Date</label>
+                        <input type="date" id="startDate" name="startDate" placeholder="Start Date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="endDate">End Date</label>
+                        <input type="date" id="endDate" name="endDate" placeholder="End Date" required>
+                    </div>
+                </div>
+                
+                <div class="form-row time-row">
+                    <div class="form-group">
+                        <label for="startTime">Start Time:</label>
+                        <input type="time" id="startTime" name="startTime" placeholder="Start Time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="endTime">End Time:</label>
+                        <input type="time" id="endTime" name="endTime" placeholder="End Time" required>
+                    </div>
+                </div>
+                <textarea id="message" name="message" rows="4" cols="50" placeholder="Message" required></textarea>
+    
+    
+                <button type="submit">Confirm</button>
+            </form>
+
+            <!-- Add this where you want the pop-up messages to appear -->
+            {% if success %}
+            <div class="success-popup">Email sent successfully!</div>
+            {% else %}
+            <div class="error-popup">Error sending email. Please try again.</div>
+            {% endif %}
+        </div>
+    </section>
+
+
+    <section class="holiday">
+        <div class="holiday-img">
+            <video src="../static/images/video.mp4" autoplay loop muted playsinline></video>
+        </div>
+
+        <div class="holiday-text">
+            <h5>Setti-Fadma and <br>The High ATlas Mountains</h5>
+            <h2>Ourika Valley</h2>
+            <p>Setti-Fatma is the last small town (or douar) which is accessible by the paved route. It is the departure point for many excursions to the nearby mountains. The most prized and most easy hike consists of mounting the length of a mountain torrent in order to discover the cascades.</p>
+            
+            <!-- <a href="#" class="btn">Read More</a> -->
+        </div>
+    </section>
+
+    <section id="tours" class="tour">
+        <div class="tour-heading">
+            <h2>Tours</h2>
+        </div>
+    
+        <div class="tour-content">
+            <div class="tour-item">
+                <img src="../static/images/sky.jpg" alt="Tour Image 1">
+            </div>
+    
+            <div class="tour-item">
+                <img src="../static/images/hike.jpeg" alt="Tour Image 2">
+            </div>
+
+            <div class="tour-item">
+                <img src="../static/images/rocks.jpeg" alt="Tour Image 3">
+            </div>
+    
+            <div class="tour-item">
+                <img src="../static/images/twilight.jpeg" alt="Tour Image 4">
+            </div>
+
+            <div class="tour-item">
+                <img src="../static/images/fieldwalk.jpeg" alt="Tour Image 5">
+            </div>
+    
+            <div class="tour-item">
+                <img src="../static/images/mountains.jpeg" alt="Tour Image 6">
+            </div>
+
+            <div class="tour-item">
+                <img src="../static/images/slope.jpeg" alt="Tour Image 7">
+            </div>
+    
+            <div class="tour-item">
+                <img src="../static/images/sheep.jpeg" alt="Tour Image 8">
+            </div>
+
+            <div class="tour-item">
+                <img src="../static/images/waterfall.jpeg" alt="Tour Image 9">
+            </div>
+
+            <!-- more -->
+            <div class="tour-item">
+                <img src="../static/images/ice.jpg" alt="Tour Image 8">
+            </div>
+
+            <div class="tour-item">
+                <img src="../static/images/lady.jpg" alt="Tour Image 9">
+            </div>
+            
+
+            <div class="tour-item">
+                <img src="../static/images/monkey.jpg" alt="Tour Image 8">
+            </div>
+
+            <div class="tour-item">
+                <img src="../static/images/bridge.jpg" alt="Tour Image 9">
+            </div>
+
+            <div class="tour-item">
+                <img src="../static/images/pics.jpg" alt="Tour Image 8">
+            </div>
+
+            <div class="tour-item">
+                <img src="../static/images/girls.jpg" alt="Tour Image 9">
+            </div>
+
+            <div class="tour-item">
+                <img src="../static/images/jamal1.jpg" alt="Tour Image 8">
+            </div>
+
+            <div class="tour-item">
+                <img src="../static/images/fall.jpg" alt="Tour Image 9">
+            </div>
+
+            <!-- more -->
+            <div class="tour-item">
+                <img src="../static/images/vieww.jpg" alt="Tour Image 8">
+            </div>
+
+            <div class="tour-item">
+                <img src="../static/images/water.jpg" alt="Tour Image 9">
+            </div>
+
+            <div class="tour-item">
+                <img src="../static/images/cross.jpg" alt="Tour Image 8">
+            </div>
+
+            <div class="tour-item">
+                <img src="../static/images/group.jpg" alt="Tour Image 9">
+            </div>
+
+            <div class="tour-item">
+                <img src="../static/images/jamal2.jpg" alt="Tour Image 8">
+            </div>
+
+            <div class="tour-item">
+                <img src="../static/images/woman.jpg" alt="Tour Image 9">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="EndformContainer" class="end-form-container">
+            <form action="{{ url_for('book_trip') }}" method="post" class="form">
+                <div class="form-row">
+                    <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+    
+                <div class="form-row date-row">
+                    <div class="form-group">
+                        <label for="startDate">Start Date</label>
+                        <input type="date" id="startDate" name="startDate" placeholder="Start Date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="endDate">End Date</label>
+                        <input type="date" id="endDate" name="endDate" placeholder="End Date" required>
+                    </div>
+                </div>
+                
+                <div class="form-row time-row">
+                    <div class="form-group">
+                        <label for="startTime">Start Time:</label>
+                        <input type="time" id="startTime" name="startTime" placeholder="Start Time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="endTime">End Time:</label>
+                        <input type="time" id="endTime" name="endTime" placeholder="End Time" required>
+                    </div>
+                </div>
+                <textarea id="message" name="message" rows="4" cols="50" placeholder="Message" required></textarea>
+    
+                <button type="submit">Confirm</button>
+            </form>
+    </section>
+
+    
+    <section id="footer" class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">JA<span>MAL</span></div>
+            
+            <div class="footer-social">
+                <a href="https://www.instagram.com/jamal_sight_morocco_?igsh=cWplaW55MWJxYTRt&utm_source=qr"><i class="ri-instagram-fill"></i></a>
+                <a href="https://www.facebook.com/jamal.jamaljamal.71697092?mibextid=LQQJ4d"><i class="ri-facebook-fill"></i></a>
+                <li><a href="tel:+212668666473"><i class="ri-phone-fill"></i></a></li>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Jamal Website. All rights reserved.</p>
+        </div>
+    </section>
+    
+    <script src="../static/js/script.js"></script>
+</body>
+</html>
