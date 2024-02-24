@@ -472,7 +472,7 @@ body.menu-open .navbar {
 
 .footer-social {
     display: flex;
-    gap: 10px; /* Adjust the gap between icons as needed */
+    gap: 10px;
 }
 
 .footer-social a {
