@@ -215,6 +215,10 @@ header.sticky{
 }
 
 
+div > p:last-child{
+    color: #61ca0c;
+}
+
 .holiday{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
