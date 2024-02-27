@@ -248,7 +248,7 @@ th {
 
 
 h4{
-    background-color: #ecf1ee;
+    /* background-color: #ecf1ee; */
     color: var(--main-color);
 }
 
