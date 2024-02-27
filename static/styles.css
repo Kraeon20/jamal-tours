@@ -215,8 +215,41 @@ header.sticky{
 }
 
 
-div > p:last-child{
+.green-text {
     color: #61ca0c;
+}
+
+/* Add this style for the schedule section */
+.schedule {
+    padding: 70px 17%;
+}
+
+.schedule-table {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+
+h4{
+    background-color: #ecf1ee;
+    color: var(--main-color);
 }
 
 .holiday{
@@ -727,6 +760,10 @@ body.menu-open .navbar {
     .newsletter-content{
         grid-template-columns: 1fr;
 
+    }
+
+    .schedule {
+        padding: 50px 3%;
     }
 }
 
