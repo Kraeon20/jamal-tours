@@ -127,11 +127,18 @@ section{
     color: var(--main-color);
 }
 
-.home-text h1{
+.home-text h1, h2{
     font-size: var(--h1-font);
-    font-weight: 800;
     line-height: 1.2;
     margin-bottom: 20px;
+}
+
+.home-text h1{
+    font-weight: 800;
+}
+
+.home-text h2{
+    font-weight: 650;
 }
 
 .home-text p{
