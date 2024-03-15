@@ -466,6 +466,16 @@ body.menu-open .navbar {
     color: #fff;
 }
 
+.tripadvisor {
+    padding: 70px 17%;
+    text-align: center;
+}
+
+.tripadvisor-widget {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 
 .success-popup,
 .error-popup {
