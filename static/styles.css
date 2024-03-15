@@ -468,13 +468,13 @@ body.menu-open .navbar {
 
 .tripadvisor {
     padding: 70px 17%;
-    text-align: center;
 }
 
-.tripadvisor-widget {
-    max-width: 800px;
+.tripadvisor-content {
+    max-width: 1200px;
     margin: 0 auto;
 }
+
 
 
 .success-popup,
