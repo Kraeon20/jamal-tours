@@ -38,8 +38,8 @@ def send_email(name, email, message, receiver_email, start_date, end_date, start
         # Generate a unique identifier for each email
         email_id = str(uuid.uuid4())
 
-        sender_email = 'jamalourika.tours@gmail.com'
-        sender_password = 'bwzujfmgfwsicqwg'
+        sender_email = 'williams.asante515@gmail.com'
+        sender_password = 'schzhblasmwhmnlc'
 
         subject = 'New Trip Booking'
 
