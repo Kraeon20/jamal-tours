@@ -10,11 +10,6 @@ import logging
 app = Flask(__name__)
 
 
-
-# Set up logging
-logging.basicConfig(filename='app.log', level=logging.ERROR)
-
-
 @app.route('/')
 def index():
     return render_template('index.html')
