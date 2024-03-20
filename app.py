@@ -4,8 +4,16 @@ import datetime
 import uuid
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+import logging
+
 
 app = Flask(__name__)
+
+
+
+# Set up logging
+logging.basicConfig(filename='app.log', level=logging.ERROR)
+
 
 @app.route('/')
 def index():
@@ -63,7 +71,7 @@ def send_email(name, email, message, receiver_email, start_date, end_date, start
 
         return True
     except Exception as e:
-        print(f"Error sending email: {e}")
+        logging.error(f"Error sending email: {e}")
         return False
 
 
