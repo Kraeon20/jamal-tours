@@ -25,8 +25,8 @@ def book_trip():
         start_time = request.form['startTime']
         end_time = request.form['endTime']
 
-        # Replace 'williams.asante515@gmail.com' with your actual email address
-        receiver_email = 'williams.asante515@gmail.com'
+        # Replace 'jamalourika.tours@gmail.com' with your actual email address
+        receiver_email = 'jamalourika.tours@gmail.com'
 
         # Send email for each booking
         success = send_email(name, email, message, receiver_email, start_date, end_date, start_time, end_time)
