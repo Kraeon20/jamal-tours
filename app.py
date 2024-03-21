@@ -28,7 +28,7 @@ def book_trip():
 
         # receiver_email = config('RECEIVER_EMAIL')
         # Replace 'jamalourika.tours@gmail.com' with your actual email address
-        receiver_email = 'jamalourika.tours@gmail.com'
+        receiver_email = 'kraeon515@gmail.com'
 
         # Send email for each booking
         success = send_email(name, email, message, receiver_email, start_date, end_date, start_time, end_time)
