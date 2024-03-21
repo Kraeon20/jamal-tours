@@ -4,6 +4,7 @@ import datetime
 import uuid
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+from decouple import config
 
 app = Flask(__name__)
 
@@ -23,7 +24,7 @@ def book_trip():
         end_time = request.form['endTime']
 
         # Replace 'williams.asante515@gmail.com' with your actual email address
-        receiver_email = 'jamalourika.tours@gmail.com'
+        receiver_email = config('RECEIVER_EMAIL')
 
         # Send email for each booking
         success = send_email(name, email, message, receiver_email, start_date, end_date, start_time, end_time)
@@ -35,8 +36,8 @@ def send_email(name, email, message, receiver_email, start_date, end_date, start
         # Generate a unique identifier for each email
         email_id = str(uuid.uuid4())
 
-        sender_email = 'jamalourika.tours@gmail.com'
-        sender_password = 'bwzujfmgfwsicqwg'
+        sender_email = config('SENDER_EMAIL')
+        sender_password = config('SENDER_PASSWORD')
 
         subject = 'New Trip Booking'
 
