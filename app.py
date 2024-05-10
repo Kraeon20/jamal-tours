@@ -4,12 +4,9 @@ import datetime
 import uuid
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-
-
 from decouple import config
 import logging
 
-app = Flask(__name__)
 
 
 app = Flask(__name__)
