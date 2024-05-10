@@ -4,7 +4,6 @@ import datetime
 import uuid
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from decouple import config
 import logging
 
 
