@@ -54,48 +54,6 @@
         </div>
 
 
-        <div id="formContainer" class="form-container">
-            <form action="{{ url_for('book_trip') }}" method="post" class="form">
-                <div class="form-row">
-                    <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
-                    <input type="email" id="email" name="email" placeholder="Email" required>
-                </div>
-    
-                <div class="form-row date-row">
-                    <div class="form-group">
-                        <label for="startDate">Start Date</label>
-                        <input type="date" id="startDate" name="startDate" placeholder="Start Date" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="endDate">End Date</label>
-                        <input type="date" id="endDate" name="endDate" placeholder="End Date" required>
-                    </div>
-                </div>
-                
-                <div class="form-row time-row">
-                    <div class="form-group">
-                        <label for="startTime">Start Time:</label>
-                        <input type="time" id="startTime" name="startTime" placeholder="Start Time" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="endTime">End Time:</label>
-                        <input type="time" id="endTime" name="endTime" placeholder="End Time" required>
-                    </div>
-                </div>
-                <textarea id="message" name="message" rows="4" cols="50" placeholder="Message" required></textarea>
-    
-    
-                <button type="submit">Confirm</button>
-            </form>
-
-            {% if success %}
-            <div class="success-popup">Email sent successfully!</div>
-            {% else %}
-            <div class="error-popup">Error sending email. Please try again.</div>
-            {% endif %}
-        </div>
-    </section>
-
 
     <section class="holiday">
         <div class="holiday-img">
@@ -292,53 +250,6 @@
             </div>
         </div>
     </section>
-
-
-
-    
-
-    <section>
-        <div id="EndformContainer" class="end-form-container">
-            <form action="{{ url_for('book_trip') }}" method="post" class="form">
-                <div class="form-row">
-                    <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
-                    <input type="email" id="email" name="email" placeholder="Email" required>
-                </div>
-    
-                <div class="form-row date-row">
-                    <div class="form-group">
-                        <label for="startDate">Start Date</label>
-                        <input type="date" id="startDate" name="startDate" placeholder="Start Date" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="endDate">End Date</label>
-                        <input type="date" id="endDate" name="endDate" placeholder="End Date" required>
-                    </div>
-                </div>
-                
-                <div class="form-row time-row">
-                    <div class="form-group">
-                        <label for="startTime">Start Time:</label>
-                        <input type="time" id="startTime" name="startTime" placeholder="Start Time" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="endTime">End Time:</label>
-                        <input type="time" id="endTime" name="endTime" placeholder="End Time" required>
-                    </div>
-                </div>
-                <textarea id="message" name="message" rows="4" cols="50" placeholder="Message" required></textarea>
-    
-                <button type="submit">Confirm</button>
-            </form>
-    </section>
-
-
-    <section id="tripadvisor" class="tripadvisor">
-        <div class="tripadvisor-content">
-            <iframe src="https://www.tripadvisor.com/Attraction_Review-g293734-d27457755-Reviews-Jamal_Ourika_Tours-Marrakech_Marrakech_Safi.html" width="100%" height="600" frameborder="0" style="border:none;"></iframe>
-        </div>
-    </section>
-    
 
     
     <section id="footer" class="footer">
