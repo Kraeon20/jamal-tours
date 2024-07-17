@@ -406,6 +406,8 @@ body.menu-open .navbar {
     transition: transform 0.7s;
 }
 
+
+
 .tour-item img:hover {
     transform: scale(1.05);
 }
@@ -419,6 +421,13 @@ body.menu-open .navbar {
     color: #fff;
 }
 
+.rotate-upright {
+    transform: rotate(90deg); /* Adjust the rotation angle as needed */
+}
+
+.rotate-upright:hover {
+    transform: scale(1.05) rotate(90deg); /* Maintain the rotation on hover */
+}
 
 .tour {
     padding: 70px 17%;
