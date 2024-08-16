@@ -397,13 +397,13 @@ body.menu-open .navbar {
   color: #fff;
 }
 
-.rotate-upright {
-  transform: rotate(270deg); /* Adjust the rotation angle as needed */
+/* .rotate-upright {
+  transform: rotate(270deg);
 }
 
 .rotate-upright:hover {
-  transform: scale(1.05) rotate(270deg); /* Maintain the rotation on hover */
-}
+  transform: scale(1.05) rotate(270deg);
+} */
 
 .tour {
   padding: 70px 17%;
